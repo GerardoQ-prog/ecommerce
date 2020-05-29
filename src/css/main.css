@@ -6,9 +6,7 @@ a {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-}
-  
+  font-family: 'Raleway', sans-serif; }
 
 .nav {
   display: flex;
@@ -31,9 +29,9 @@ body {
     align-items: center;
     text-align: center; }
     .nav_buttoncar_car {
-      margin: 5px; }
+      margin: 3px; }
     .nav_buttoncar_precio {
-      margin: 10px; }
+      margin: 3px; }
     .nav_buttoncar_cantidad {
       background: #000000;
       width: 19px;
@@ -60,9 +58,18 @@ body {
 .menu {
   color: white;
   justify-content: center;
-  display: flex; }
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  bottom: 10px; }
   .menu_lista {
+    margin: 0;
+    justify-content: center;
     text-decoration: none;
     color: #858585;
-    font-weight: 900;
-    padding: 10px; }
+    font-weight: 600;
+    padding: 10px;
+    height: 50px; }
+    .menu_lista:hover {
+      background: #18CE94;
+      color: white; }
