@@ -8,7 +8,9 @@ class Nav extends React.Component{
     render(){
         return(
             <div className="nav">
-                <div className="nav_image" ></div>
+                <div className="nav_image" >
+                <img src={require('./img/logo.png')}/>
+                </div>
                 <div className="nav_buscar">
                 <FontAwesomeIcon icon={faSearch} size="lg" />
                 </div>
