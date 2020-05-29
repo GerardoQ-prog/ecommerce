@@ -10,12 +10,12 @@ class Nav extends React.Component{
             <div className="nav">
                 <div className="nav_image" ></div>
                 <div className="nav_buscar">
-                <FontAwesomeIcon icon={faSearch} size="lg"/>
+                <FontAwesomeIcon icon={faSearch} size="lg" />
                 </div>
-                <div className="nav_ingreso">
+                <Link to="/"className="nav_ingreso">
                 <FontAwesomeIcon icon={faUserAlt} size="lg"></FontAwesomeIcon>  
                 Ingresar               
-                </div>          
+                </Link>          
                 <ButtonCar className="nav_buttoncar">
                 </ButtonCar>
                 

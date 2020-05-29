@@ -12,7 +12,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    color : $letter-color;
+    color : white;
 
 &_buttoncar{
     display: flex;
@@ -55,8 +55,12 @@ body {
     margin: 25px;
     
 }
+
 &_ingreso{  
     margin: 25px;
+    text-decoration: none;
+    outline: none;
+    color: white;    
 
     
 }

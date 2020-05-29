@@ -9,7 +9,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #858585; }
+  color: white; }
   .nav_buttoncar {
     display: flex;
     border: 0;
@@ -41,7 +41,10 @@ body {
   .nav_buscar {
     margin: 25px; }
   .nav_ingreso {
-    margin: 25px; }
+    margin: 25px;
+    text-decoration: none;
+    outline: none;
+    color: white; }
 
 .fa-lg {
   padding-right: 10px; }
