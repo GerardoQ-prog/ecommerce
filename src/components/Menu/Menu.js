@@ -12,20 +12,19 @@ const Menu = () => {
         {id: 6, nombre: "Oferta"}
       ]);
       return (
-          <div className="menu">
-                  <ul className="row">
+                  <ul className="menu">
                       {
                           categoria.map(item => (
                               <li className="menu_lista" key={item.id}>
                                   <Link to={`/categoria/${item.id}`}>
-                                        <h4>{item.nombre}</h4>
+                                        {item.nombre}
                                       
                                   </Link>
                               </li>
                           ))
                       }
                   </ul>
-          </div>
+
       )
   }
   

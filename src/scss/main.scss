@@ -1,5 +1,11 @@
 @import 'config';
 
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -67,4 +73,17 @@ body {
 }
 .fa-lg {
     padding-right: 10px;
+}
+.menu{
+    color:white;
+    justify-content: center;
+    display: flex;
+
+    &_lista{
+        text-decoration: none;
+        color: $letter-color;
+        font-weight: 900;
+        padding: 10px;
+    }
+    
 }

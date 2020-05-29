@@ -15,7 +15,6 @@ const Categoria = () => {
     ]);
     return (
         <div className="container">
-            <h3 className="categoria">Categoria</h3>
                 <ul className="row">
                     {
                         categoria.map(item => (
