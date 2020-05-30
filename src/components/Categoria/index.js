@@ -15,6 +15,7 @@ const Categoria = () => {
     ]);
     return (
         <div className="container">
+            <h2 class="cat-center">Categorias</h2>
                 <ul className="row">
                     {
                         categoria.map(item => (
