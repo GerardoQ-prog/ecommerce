@@ -11,16 +11,13 @@ body {
 .nav {
   display: flex;
   background: #000000;
-  height: 80px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: white; }
+  height: 80px; }
   .nav_buttoncar {
     display: flex;
     border: 0;
     border-radius: 22px;
-    width: 128px;
+    width: 138px;
+    justify-content: center;
     height: 47px;
     cursor: pointer;
     background-color: #18CE94;
@@ -39,11 +36,6 @@ body {
       border-radius: 10px;
       text-align: center;
       padding: 2px; }
-  .nav_image {
-    background: url();
-    display: block;
-    flex-grow: 1;
-    text-align: left; }
   .nav_buscar {
     margin: 25px; }
   .nav_ingreso {
@@ -51,25 +43,34 @@ body {
     text-decoration: none;
     outline: none;
     color: white; }
+  .nav .menunav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; }
+  .nav .right {
+    display: flex; }
 
 .fa-lg {
   padding-right: 10px; }
 
 .menu {
   color: white;
-  justify-content: center;
   display: flex;
   padding: 0px;
   margin: 0px;
-  bottom: 10px; }
+  bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-bottom: solid 1px #ddd; }
   .menu_lista {
     margin: 0;
     justify-content: center;
     text-decoration: none;
     color: #858585;
     font-weight: 600;
-    padding: 10px;
-    height: 50px; }
+    padding: 10px; }
     .menu_lista:hover {
       background: #18CE94;
       color: white; }
