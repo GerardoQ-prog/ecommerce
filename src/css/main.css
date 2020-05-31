@@ -37,7 +37,8 @@ body {
       text-align: center;
       padding: 2px; }
   .nav_buscar {
-    margin: 25px; }
+    margin: 25px; 
+    color: white;}
   .nav_ingreso {
     margin: 25px;
     text-decoration: none;

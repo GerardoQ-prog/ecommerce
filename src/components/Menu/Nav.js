@@ -15,7 +15,7 @@ class Nav extends React.Component{
                         </div>
                         <div class="right">
                             <div className="nav_buscar">
-                                <FontAwesomeIcon icon={faSearch} size="lg" />
+                            <FontAwesomeIcon icon={faSearch} size="lg" />
                             </div>
                             <Link to="/"className="nav_ingreso">
                             <FontAwesomeIcon icon={faUserAlt} size="lg"></FontAwesomeIcon>  
