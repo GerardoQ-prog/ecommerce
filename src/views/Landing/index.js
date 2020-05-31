@@ -2,7 +2,7 @@ import React from 'react';
 
 import Nav from '../../components/Menu/Nav'
 import Menu from '../../components/Menu/Menu'
-import Slider from '../../components/Slider'
+
 import Categoria from '../../components/Categoria/index'
 import Footer from '../../components/Footer'
 import Carousel from '../../components/Carrousel/Carrusel'

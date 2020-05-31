@@ -1,7 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import './carrusel.scss'
 import ItemCarrusel from './components/item.js'
-import Background from './../Slider/img/slide-2.jpg';
+
+import Background from './../Carrousel/slide.png';
+
  const imgs = [
     `"${Background}"`,
     "https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esMX/Images/ZX710-teaser-DT_tcm217-498117.png",
