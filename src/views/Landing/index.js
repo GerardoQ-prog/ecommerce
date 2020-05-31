@@ -5,13 +5,14 @@ import Menu from '../../components/Menu/Menu'
 import Slider from '../../components/Slider'
 import Categoria from '../../components/Categoria/index'
 import Footer from '../../components/Footer'
+import Carousel from '../../components/Carrousel/Carrusel'
 class Landing extends React.Component{
     render(){
         return(
             <div>
             <Nav></Nav>
             <Menu></Menu> 
-            <Slider></Slider> 
+            <Carousel/>
             <Categoria></Categoria>
             <Footer></Footer>
             </div>
