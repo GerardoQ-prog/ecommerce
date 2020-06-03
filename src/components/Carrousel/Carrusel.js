@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import './carrusel.scss'
+
 import ItemCarrusel from './components/item.js'
 
 import Background from './../Carrousel/slide.png';

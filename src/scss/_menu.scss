@@ -1,0 +1,104 @@
+
+.nav{
+    display: flex;
+    background: $primary-color;
+    height: 80px;
+    // width: 100%;
+    // margin: 0;
+    // padding: 0;
+    // color : white;
+
+&_buttoncar{
+    display: flex;
+    border: 0;
+    border-radius: 22px;
+    width: 138px;
+    justify-content: center;
+    height: 47px;
+    cursor: pointer;
+    background-color: $secondary-color;
+    margin: 15px 10px ;
+    color: white;
+    align-items: center;
+    text-align: center;
+    &_car{
+        margin: 3px;
+
+    }
+    &_precio{
+        margin: 3px;
+
+    }
+    &_cantidad{
+        background: $primary-color;
+        width: 19px;
+        height: 19px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2px;
+
+    }
+
+}
+&_image{
+    // background: url();
+    // display: block;
+    // flex-grow: 1;
+    // text-align: left;
+}
+&_buscar{
+    margin: 25px;
+    color: white;
+    
+}
+
+&_ingreso{  
+    margin: 25px;
+    text-decoration: none;
+    outline: none;
+    color: white;    
+
+    
+}
+    .menunav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right {
+        display: flex;
+    }
+}
+.fa-lg {
+    padding-right: 10px;
+}
+.menu{
+    color:white;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-bottom: solid 1px #ddd;
+
+
+    &_lista{
+        margin: 0;
+        justify-content: center;
+        text-decoration: none;
+        color: $letter-color;
+        font-weight: 600;
+        padding: 10px;
+
+
+        &:hover{
+            background: $secondary-color;
+            color: white;
+        }
+    }
+    
+}
+
