@@ -3,7 +3,7 @@ import './scss/main.scss';
 import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import Landing from './views/Landing/index'
 import Categoria from './views/Categoria/index'
-
+import Register from './views/Register/index'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
        <Switch>
          <Route path="/" component={Landing} exact></Route>
          <Route path="/categoria/:id" component={Categoria} exact></Route>
+         <Route path="/register" component={Register} exact></Route>
        </Switch>
      </Router>
 

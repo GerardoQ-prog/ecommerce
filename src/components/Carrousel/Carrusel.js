@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 
 import ItemCarrusel from './components/item.js'
 
-import Background from './../Carrousel/slide.png';
+import Background from '../img/slide.png';
 
  const imgs = [
     `"${Background}"`,

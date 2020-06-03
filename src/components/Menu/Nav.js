@@ -11,13 +11,13 @@ class Nav extends React.Component{
                 <div class="container">
                     <div class="menunav">
                         <div className="nav_image" >
-                            <img src={require('./img/logo.png')}/>
+                            <img src={require('../img/logo.png')}/>
                         </div>
                         <div class="right">
                             <div className="nav_buscar">
                             <FontAwesomeIcon icon={faSearch} size="xl" />
                             </div>
-                            <Link to="/"className="nav_ingreso">
+                            <Link to="/register"className="nav_ingreso">
                             <FontAwesomeIcon icon={faUserAlt} size="xl"></FontAwesomeIcon>  
                             Ingresar               
                             </Link>          
