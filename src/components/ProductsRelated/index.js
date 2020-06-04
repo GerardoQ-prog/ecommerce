@@ -19,23 +19,23 @@ const  ProductsRelated = () => {
                     products.map(item => (
                         <li className="product-related" key={item.id}>
                             
-                                <div className='products'>
-                                    <div className='product-img'>
-                                        <img src={item.img}  />                                        
-                                    </div>
-                                    <div className='product-detail'>
-                                        <h2 className='product-title'>{item.name}</h2>
-                                        <h4 className='product-price'>  S/{item.price}</h4>
-                                        <Link className='product-add' to={`/product/${item.id}`}>
-                                            Agregar a Carrito
-                                        </Link>
+                            <div className='products'>
+                                <div className='product-img'>
+                                    <img src={item.img}  />                                        
+                                </div>
+                                <div className='product-detail'>
+                                    <h2 className='product-title'>{item.name}</h2>
+                                    <h4 className='product-price'>  S/{item.price}</h4>
+                                    <Link className='product-add' to={`/product/${item.id}`}>
+                                        Agregar a Carrito
+                                    </Link>
 
-                                    </div>
+                                </div>
                                     
                                 </div>
                                 
                          </li>
-                        ))
+                    ))
                 }
 
             </ul>
