@@ -10,9 +10,11 @@ class Nav extends React.Component{
             <div className="nav">
                 <div class="container">
                     <div class="menunav">
+                        <Link to="/">
                         <div className="nav_image" >
                             <img src={require('../img/logo.png')}/>
                         </div>
+                        </Link>
                         <div class="right">
                             <div className="nav_buscar">
                             <FontAwesomeIcon icon={faSearch} size="xl" />
