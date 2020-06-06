@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <div class="container">
-                <a href="javascript:;">
+                <a href="">
                     <img src={require('../img/logo.png')}/>
                 </a>
                 <p>Todos los derechos reservados</p>

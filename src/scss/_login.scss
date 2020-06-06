@@ -1,0 +1,63 @@
+.login {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    display: flex;
+    padding: 1rem;
+    margin: 120px auto;
+    overflow: hidden;
+    .header{
+      margin-bottom: 2rem;
+      .btn-secondary{
+        width: 45%;
+      }
+      .btnUno{
+        margin-left: 0rem;
+        margin-right: 2rem;
+        &:hover,
+        &:link,
+        &:disabled,
+        &:focus {
+        border: 1px solid $secondary-color;
+            color: $secondary-color;
+        }
+      }
+      .btnDos{
+        margin-right: 0rem;
+        &:hover,
+        &:link,
+        &:focus {
+        border: 1px solid $secondary-color;
+            color: $secondary-color;
+        }
+      }
+    }
+    .recuperar {
+        margin-top: 2rem;
+        text-align: center;
+        color: $letter-color;
+    }
+    .form-grupo {
+        margin-bottom: 1.7rem;
+
+      .labelText{
+        color: $letter-color
+      }
+
+      .form-control {
+        display: block;
+        width: 333px;
+        height: 40px;
+        padding: 0.5rem;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #C4C4C4;
+        margin-top: 6px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        &:focus, &.fyll-focus{
+          border: 1px solid $secondary-color;
+        }
+      }
+    }
+  }

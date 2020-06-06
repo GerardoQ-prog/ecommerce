@@ -5,6 +5,8 @@
 @import 'carousel';
 @import 'carouselitem';
 @import 'productRelated';
+@import 'login';
+@import 'btn';
 
 a{
     color: inherit;
@@ -12,6 +14,10 @@ a{
     outline: none;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
 body {
     padding: 0;
      margin: 0;

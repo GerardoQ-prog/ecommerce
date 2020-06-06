@@ -19,7 +19,7 @@ class Nav extends React.Component{
                             <div className="nav_buscar">
                             <FontAwesomeIcon icon={faSearch} size="xl" />
                             </div>
-                            <Link to="/register"className="nav_ingreso">
+                            <Link to="/signin"className="nav_ingreso">
                             <FontAwesomeIcon icon={faUserAlt} size="xl"></FontAwesomeIcon>  
                             Ingresar               
                             </Link>          
