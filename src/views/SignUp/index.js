@@ -14,6 +14,8 @@ const SignUp = ({history}) => {
         password: ''
     })
 
+    const [loading, setLoading] = useState(false)
+
     const onChangeData = (e) => {
         setUsers({
             ...users,
@@ -24,9 +26,11 @@ const SignUp = ({history}) => {
     const { errors, handleSubmit, register } = useForm();
 
     const onSubmit = async (data, e) => {
-        e.target.reset();
+        setLoading({ loading: true });
+    
         Axios.post('/api/users',users)
         .then(res =>{
+            
             //validar si hay errores de mongo
             if(res.data.code === 11000){
                 Swal.fire({
@@ -43,7 +47,12 @@ const SignUp = ({history}) => {
                   )  
 
             }
-
+            setTimeout(() => {
+                setLoading({ loading: false });
+            }, 2000);
+        
+            
+             e.target.reset();
             history.push('/signIn')
         })
 
@@ -128,9 +137,16 @@ const SignUp = ({history}) => {
                         {errors?.password?.message}
                     </span>
                 </div>
-                <button type="submit" value="SingUp"className="btn btn-block btn-primary">
-                    SignUp
-                    </button>
+                <button className="btn btn-block btn-primary" type="submit">
+                    {loading && (
+                        <i
+                        className="fa fa-refresh fa-spin"
+                        style={{ marginRight: "5px" }}
+                      />
+                    )}
+                    {loading && <span>Procesando</span>}
+                    {!loading && <span>Crear Cuenta</span>}
+                </button>
             </form>
             <Link to="/recuperar">
                 <h4 className="recuperar">Recuperar Contraseña</h4>

@@ -1,3 +1,11 @@
+.close{
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items:flex-end;
+}
+
 .login {
     width: 100%;
     height: 100%;
@@ -23,7 +31,6 @@
         }
       }
       .btnDos{
-        margin-right: 0rem;
         &:hover,
         &:link,
         &:focus {
