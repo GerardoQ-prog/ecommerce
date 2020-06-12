@@ -53,3 +53,11 @@
     padding: 13px 40px;
     font-size: 25px;
 }
+
+@include mediaLg{
+    .product-list{
+        flex-direction: column;
+        width: 100%;
+
+    }  
+}

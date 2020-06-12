@@ -42,9 +42,10 @@ const ProductDetail = () => {
                 </div>
                 
             </div>
-            <div>
-                <ProductsRelated />
-            </div>
+            <ProductsRelated />
+            
+           
+            
         </div>
         
     );

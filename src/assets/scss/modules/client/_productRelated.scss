@@ -27,3 +27,15 @@
         height: auto;
     }  
   }
+  @include mediaLg{
+    .product-list{
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+
+    }
+    .product-related{
+        width: 38em;
+        text-align: center;
+    }  
+}
