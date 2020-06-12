@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-import Axios from '../../config/axios'
+import Axios from '../../../config/axios';
 
-import Login from "../../components/Login";
+import Login from "../../../components/Login";
 
 const SignIn = (props) => {
     const [user, setUser] = useState({
@@ -117,5 +117,7 @@ const SignIn = (props) => {
         </Login>
     )
 }
+
+
 
 export default SignIn

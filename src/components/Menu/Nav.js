@@ -12,7 +12,7 @@ class Nav extends React.Component{
                     <div class="menunav">
                         <Link to="/">
                         <div className="nav_image" >
-                            <img src={require('../img/logo.png')}/>
+                            <img src={require('../../assets/img/logo.png')}/>
                         </div>
                         </Link>
                         <div class="right">

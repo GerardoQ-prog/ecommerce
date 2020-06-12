@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-import Axios from '../../config/axios'
-import Login from "../../components/Login";
+import Axios from '../../../config/axios';
+import Login from "../../../components/Login";
 import Swal from 'sweetalert2'
 import { withRouter } from 'react-router-dom'
 
@@ -53,7 +53,7 @@ const SignUp = ({history}) => {
         
             
              e.target.reset();
-            history.push('/signIn')
+            history.push('/signin')
         })
 
     };
