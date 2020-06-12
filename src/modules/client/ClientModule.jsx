@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './views/Home';
 import Categoria from '../../components/Categoria'
-import Products from './views/Products';
+import Products from './views/ProductDetail';
 import Nav from '../../components/Menu/Nav';
 import Menu from '../../components/Menu/Menu';
 import Footer from '../../components/Footer';

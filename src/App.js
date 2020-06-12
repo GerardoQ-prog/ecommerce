@@ -11,7 +11,7 @@ function App() {
          <Route exact path='/signup' component={ LoggedModule } />
          <Route exact path='/signin' component={ LoggedModule } />
          <Route exact path='/recuperar' component={ LoggedModule } />
-         <Route exact path='/' component={ ClientModule } />
+         <Route  path='/' component={ ClientModule } />
          {/* <Route exact path='/' */}
          {/* admin */}
 

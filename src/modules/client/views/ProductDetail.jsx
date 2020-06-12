@@ -1,14 +1,14 @@
 import React from 'react'
 import Carousel from '../../../components/Carrousel/Carrusel';
-import ProductsRelated from '../../../components/ProductsRelated';
+import Product from '../../../components/ProductDetail';
 
-const Products = () => {
+const ProductDetail = () => {
     return ( 
         <>
             <Carousel />
-            <ProductsRelated />
+            <Product />
         </> 
     );
 }
  
-export default Products;
+export default ProductDetail;
