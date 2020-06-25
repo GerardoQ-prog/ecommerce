@@ -15,9 +15,11 @@ class Nav extends React.Component{
                             <img src={require('../../assets/img/logo.png')}/>
                         </div>
                         </Link>
+                        <h2> BIENVENIDO A PERU </h2>
                         <div class="right">
                             <div className="nav_buscar">
                             <FontAwesomeIcon icon={faSearch} size="xl" />
+                           
                             </div>
                             <Link to="/signin"className="nav_ingreso">
                             <FontAwesomeIcon icon={faUserAlt} size="xl"></FontAwesomeIcon>  
