@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import Axios from '../../../config/axios';
 import Login from "../../../components/Login";
+import Loading from '../../../components/Login/Loading';
 import Swal from 'sweetalert2'
 import { withRouter } from 'react-router-dom'
 
@@ -15,6 +16,18 @@ const SignUp = ({history}) => {
     })
 
     const [loading, setLoading] = useState(false)
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
 
     const onChangeData = (e) => {
         setUsers({
@@ -33,27 +46,32 @@ const SignUp = ({history}) => {
             
             //validar si hay errores de mongo
             if(res.data.code === 11000){
-                Swal.fire({
-                    type:'error',
-                    title:'Hubo un error',
-                    text: ' No se agrego producto'
+                Toast.fire({
+                    icon: 'error',
+                    html: '<p class="text-alert m">Error</p>',
+                    customClass: {
+                        popup: 'popup-class-error',    
+                      }
                   })
             }else{
-                
-                Swal.fire(
-                    'Registrado Correctamente',
-                    res.data.mensaje,
-                    'success'
-                  )  
-
+                Toast.fire({
+                    icon: 'success',
+                    html: '<p class="text-secondary m">Usuario creado satisfactoriamente</p>',
+                    customClass: {
+                        popup: 'popup-class-success',    
+                      }
+                },                  
+                  res.data.mensaje
+                )
             }
+
             setTimeout(() => {
                 setLoading({ loading: false });
             }, 2000);
         
             
              e.target.reset();
-            history.push('/signin')
+            history.push('/signIn')
         })
 
     };
@@ -139,10 +157,7 @@ const SignUp = ({history}) => {
                 </div>
                 <button className="btn btn-block btn-primary" type="submit">
                     {loading && (
-                        <i
-                        className="fa fa-refresh fa-spin"
-                        style={{ marginRight: "5px" }}
-                      />
+                        <Loading />
                     )}
                     {loading && <span>Procesando</span>}
                     {!loading && <span>Crear Cuenta</span>}

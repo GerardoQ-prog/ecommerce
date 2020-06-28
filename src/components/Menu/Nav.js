@@ -15,7 +15,6 @@ class Nav extends React.Component{
                             <img src={require('../../assets/img/logo.png')}/>
                         </div>
                         </Link>
-                        <h2 className="menunav_type"> BIENVENIDO A PERU </h2>
                         <div class="right">
                             <div className="nav_buscar">
                             <FontAwesomeIcon icon={faSearch} size="xl" />

@@ -1,0 +1,27 @@
+@mixin texto ($textoColor) {
+    color: $textoColor
+}
+
+@mixin background($backgroundColor) {
+    background-color: $backgroundColor;
+}
+
+@mixin btn ($color,$bgColor,$bcolor:none){
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $bgColor;
+    border: $bcolor;
+    cursor: pointer;
+}
+
+@mixin ico ($ico-color) {
+    color: $ico-color;
+    cursor: pointer;
+}

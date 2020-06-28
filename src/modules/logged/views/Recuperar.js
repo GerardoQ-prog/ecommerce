@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 
 import Login from "../../../components/Login";
-
+import Loading from '../../../components/Login/Loading';
 
 
 
@@ -24,9 +24,14 @@ const Recuperar = () => {
     }
 
     const onSubmit = async (data, e) => {
-        
-     e.target.reset();
-
+        setLoading({ loading: true });
+    
+            // API call here
+            
+            setTimeout(() => {
+                setLoading({ loading: false });
+            }, 2000);
+         e.target.reset();
 };
 
 
@@ -60,10 +65,7 @@ const Recuperar = () => {
                </div> 
                <button type="submit" className="btn btn-block btn-primary">
                {loading && (
-                        <i
-                        className="fa fa-refresh fa-spin"
-                        style={{ marginRight: "5px" }}
-                      />
+                       <Loading />
                     )}
                     {loading && <span>Procesando</span>}
                     {!loading && <span>Recuperar</span>}

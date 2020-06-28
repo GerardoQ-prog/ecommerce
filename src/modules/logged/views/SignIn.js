@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import Axios from '../../../config/axios';
 
 import Login from "../../../components/Login";
+import Loading from '../../../components/Login/Loading';
 
 const SignIn = (props) => {
     const [user, setUser] = useState({
@@ -100,10 +101,7 @@ const SignIn = (props) => {
 
                 <button className="btn btn-block btn-primary" type="submit">
                     {loading && (
-                        <i
-                        className="fa fa-refresh fa-spin"
-                        style={{ marginRight: "5px" }}
-                      />
+                        <Loading />
                     )}
                     {loading && <span>Procesando</span>}
                     {!loading && <span>Ingresar</span>}
@@ -118,6 +116,7 @@ const SignIn = (props) => {
     )
 }
 
-
-
 export default SignIn
+
+
+
