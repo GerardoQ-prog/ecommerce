@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const Menu = () => {
     
@@ -11,7 +13,10 @@ const Menu = () => {
         {id: 5, nombre: "Maquina"}
       ]);
       return (
-                  <ul className="menu">
+          <div className='respMenu'>
+                 
+                 <FontAwesomeIcon icon={faBars} className='menu__bars' />
+                     <ul className="menu">
                       {
                           categoria.map(item => (
                               <li className="menu_lista" key={item.id}>
@@ -23,6 +28,9 @@ const Menu = () => {
                           ))
                       }
                   </ul>
+                
+         </div>
+                  
 
       )
   }

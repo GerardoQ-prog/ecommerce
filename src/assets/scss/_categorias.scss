@@ -102,3 +102,42 @@
     }
     
 }
+@include mediaSm{
+    .categorias{
+        flex-direction: column;
+        width: 100%;
+        .filtro{
+           width: 100%;
+        }
+    }
+    .catalogo {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: red;
+    }
+}
+@include mediaMd{
+    .categorias{
+        flex-direction: column;
+        width: 100%;
+        background-color: blueviolet;
+        .filtro{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogo{
+            display: contents;
+        }
+    }
+}
+@include mediaLg{
+    .categorias{
+        flex-direction: row;
+        width: 90%;
+        background-color:blue;
+        .catalogo{
+            flex-wrap: wrap;
+        }
+    }
+}
